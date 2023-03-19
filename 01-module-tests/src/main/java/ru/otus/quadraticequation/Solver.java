@@ -9,7 +9,7 @@ public class Solver {
         if (isZero(a)) throw new IllegalArgumentException("Coefficient A can't be equal to zero");
 
         double discriminant = Math.pow(b, 2) - 4 * a * c;
-        System.out.println(discriminant);
+
         if (discriminant < 0) return new double[]{};
         if (isZero(discriminant)) return new double[] {(-1) * b / 2 / a};
         return new double[] {((-1) * b + Math.sqrt(discriminant)) / 2 / a,
